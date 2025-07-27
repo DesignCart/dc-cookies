@@ -1,0 +1,50 @@
+#dc-cookies {
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	width: 350px;
+	background-color: var(--bg);
+	color: var(--text);
+	border-radius: 8px;
+	padding: 20px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+	font-family: sans-serif;
+	z-index: 9999;
+}
+#dc-cookies h4 {
+	color: var(--title);
+	margin-top: 0;
+}
+#dc-cookies img {
+	max-width: 50px;
+	margin-bottom: 10px;
+}
+#dc-cookies .buttons {
+	margin-top: 15px;
+	display: flex;
+	gap: 10px;
+}
+#dc-cookies .accept {
+	background: var(--accept-bg);
+	color: var(--accept-color);
+	border: none;
+	padding: 10px 15px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+#dc-cookies .accept:hover {
+	background: var(--accept-hover-bg);
+	color: var(--accept-hover-color);
+}
+#dc-cookies .more {
+	background: var(--more-bg);
+	color: var(--more-color);
+	padding: 10px 15px;
+	text-decoration: none;
+	border-radius: 5px;
+	display: inline-block;
+}
+#dc-cookies .more:hover {
+	background: var(--more-hover-bg);
+	color: var(--more-hover-color);
+}

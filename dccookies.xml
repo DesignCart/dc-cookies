@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="5.0" group="system" method="upgrade">
+	<name>System - DC Cookies</name>
+	<author>Design Cart</author>
+	<version>1.0.0</version>
+	<description>PLG_SYSTEM_DCCOOKIES_DESCRIPTION</description>
+	<copyright>Copyright (C) 2025 Design Cart. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html</license>
+
+	<files>
+		<filename plugin="dccookies">dccookies.php</filename>
+		<folder>media</folder>
+	</files>
+
+	<updateservers>
+		<server type="extension" name="PLG_SYSTEM_DCCOOKIES_UPDATE_SERVER">https://www.designcart.pl/download/updates/update_plg_system_dccookies.xml</server>
+	</updateservers>
+
+	<languages>
+		<language tag="en-GB">language/en-GB.plg_system_dccookies.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+
+			<fieldset name="content" label="PLG_SYSTEM_DCCOOKIES_FIELDSET_CONTENT_LABEL">
+				<field name="title" type="text" label="PLG_SYSTEM_DCCOOKIES_FIELD_TITLE_LABEL" />
+				<field name="image" type="media" label="PLG_SYSTEM_DCCOOKIES_FIELD_IMAGE_LABEL" />
+				<field name="message" type="textarea" label="PLG_SYSTEM_DCCOOKIES_FIELD_MESSAGE_LABEL" />
+				<field name="accept_text" type="text" label="PLG_SYSTEM_DCCOOKIES_FIELD_ACCEPT_TEXT_LABEL" default="Accept" />
+				<field name="more_text" type="text" label="PLG_SYSTEM_DCCOOKIES_FIELD_MORE_TEXT_LABEL" default="More Info" />
+				<field name="more_link" type="url" label="PLG_SYSTEM_DCCOOKIES_FIELD_MORE_LINK_LABEL" />
+			</fieldset>
+
+			<fieldset name="panel_colors" label="PLG_SYSTEM_DCCOOKIES_FIELDSET_PANEL_COLORS_LABEL">
+				<field name="panel_bg" type="color" label="PLG_SYSTEM_DCCOOKIES_FIELD_PANEL_BG_LABEL" default="#333333" />
+				<field name="title_color" type="color" label="PLG_SYSTEM_DCCOOKIES_FIELD_TITLE_COLOR_LABEL" default="#ffffff" />
+				<field name="text_color" type="color" label="PLG_SYSTEM_DCCOOKIES_FIELD_TEXT_COLOR_LABEL" default="#ffffff" />
+			</fieldset>
+
+			<fieldset name="accept_colors" label="PLG_SYSTEM_DCCOOKIES_FIELDSET_ACCEPT_COLORS_LABEL">
+				<field name="accept_bg" type="color" label="PLG_SYSTEM_DCCOOKIES_FIELD_ACCEPT_BG_LABEL" default="#1ea28b" />
+				<field name="accept_color" type="color" label="PLG_SYSTEM_DCCOOKIES_FIELD_ACCEPT_COLOR_LABEL" default="#ffffff" />
+				<field name="accept_hover_bg" type="color" label="PLG_SYSTEM_DCCOOKIES_FIELD_ACCEPT_HOVER_BG_LABEL" default="#1ca7ca" />
+				<field name="accept_hover_color" type="color" label="PLG_SYSTEM_DCCOOKIES_FIELD_ACCEPT_HOVER_COLOR_LABEL" default="#ffffff" />
+			</fieldset>
+
+			<fieldset name="more_colors" label="PLG_SYSTEM_DCCOOKIES_FIELDSET_MORE_COLORS_LABEL">
+				<field name="more_bg" type="color" label="PLG_SYSTEM_DCCOOKIES_FIELD_MORE_BG_LABEL" default="#1ca7ca" />
+				<field name="more_color" type="color" label="PLG_SYSTEM_DCCOOKIES_FIELD_MORE_COLOR_LABEL" default="#ffffff" />
+				<field name="more_hover_bg" type="color" label="PLG_SYSTEM_DCCOOKIES_FIELD_MORE_HOVER_BG_LABEL" default="#1ea28b" />
+				<field name="more_hover_color" type="color" label="PLG_SYSTEM_DCCOOKIES_FIELD_MORE_HOVER_COLOR_LABEL" default="#ffffff" />
+			</fieldset>
+
+			<fieldset name="advanced" label="PLG_SYSTEM_DCCOOKIES_FIELDSET_ADVANCED_LABEL">
+				<field name="duration" type="number"
+					label="PLG_SYSTEM_DCCOOKIES_FIELD_DURATION_LABEL"
+					description="PLG_SYSTEM_DCCOOKIES_FIELD_DURATION_DESC"
+					default="30" />
+			</fieldset>
+
+		</fields>
+	</config>
+</extension>
